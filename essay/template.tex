@@ -1,0 +1,111 @@
+\documentclass[a4paper, 13pt]{extarticle}
+
+\usepackage[left=3cm, right=2cm, top=2.5cm, bottom=2.5cm]{geometry}
+
+\usepackage{fontspec}
+\setmainfont{Times New Roman}
+\usepackage{polyglossia}
+
+\usepackage{setspace}
+\onehalfspacing
+\usepackage{indentfirst}
+
+\usepackage[backend=biber, style=apa]{biblatex}
+\addbibresource{references.bib}
+
+\usepackage{graphicx}
+\usepackage{hyperref}
+\hypersetup{
+        colorlinks=true,
+        linkcolor=black,
+        filecolor=black,
+        urlcolor=blue,
+        citecolor=black
+    }
+
+\newcommand{\essaytype}{ESSAY}
+\newcommand{\essaytitle}{SUBJECT}
+\newcommand{\advisor}{Professor}
+\newcommand{\authorone}{STUDENT}
+\newcommand{\oneid}{000000}
+\newcommand{\authortwo}{STUDENT}
+\newcommand{\twoid}{000000}
+
+\begin{document}
+
+\begin{titlepage}
+	\centering
+	\vspace*{0.5cm}
+
+	{\Large VIETNAM GENERAL CONFEDERATION OF LABOR} \\[0.3cm]
+	{\Large \textbf{TON DUC THANG UNIVERSITY}} \\[0.3cm]
+	{\Large \textbf{FACULTY OF INFORMATION OF TECHNOLOGY}} \\[1.5cm]
+
+	\includegraphics[width=6cm]{tdtu-logo.png} \\[2cm]
+
+	{\Large \textbf{\authorone -- \oneid}} \\[0.3cm]
+	{\Large \textbf{\authortwo -- \twoid}} \\[2cm]
+
+	{\Huge \textbf{\essaytype}} \\[2.5cm]
+
+	{\Huge \textbf{\essaytitle}} \\[1.5cm]
+
+	{\Large Advised by} \\[0.3cm]
+	{\Large \textbf{\advisor}} \\[0.3cm]
+	{\large \textbf{HO CHI MINH CITY, 2026}}
+	\vspace*{0.5cm}
+\end{titlepage}
+
+\newpage
+\pagenumbering{roman}
+\setcounter{page}{2}
+
+\section*{\centering ACKNOWLEDMENT}
+
+We would like to express our sincere gratitude to \textbf{\advisor}, who has dedicatedly taught and guided us throughout the learning process and the execution of this \MakeLowercase{\essaytype} for the \textbf{\essaytitle} course.
+
+We also send our thanks to the \textbf{Faculty of Information Technology – Ton Duc Thang University} for creating favorable learning conditions, providing resources, and offering an excellent environment for us to research and apply our knowledge into practice.
+
+Finally, we would like to thank our teachers and friends who supported, advised, and encouraged us during the completion of this project. Your valuable feedback has helped us significantly improve the content.
+
+Despite our best efforts, shortcomings are unavoidable. We hope to receive your understanding and constructive feedback to gain experience for future courses.
+
+\vspace{1.5cm}
+\begin{flushright}
+	Ho Chi Minh City, \today \\[2cm]
+	\textbf{\authorone} \\[2cm]
+	\textbf{\authortwo}
+\end{flushright}
+
+\newpage
+\pagenumbering{roman}
+\setcounter{page}{3}
+
+\section*{\centering DECLARATION OF AUTHORSHIP}
+
+We hereby declare that this is our own project and is guided by \advisor; The content research and results contained herein are central and have not been published in any form before. The data in the tables for analysis, comments and evaluation are collected by the main author from different sources, which are clearly stated in the reference section.
+
+In addtion, the project also uses some comments, assessments as well as data of other authors, other organizations with citations and annotated sources.
+
+\textbf{if something wrong happends, we will take full responsiblity for the content of my project}. Ton Duc Thang University is not related to infringing rights, the copyright that we give during the implementation process (if any)
+
+\vspace{1.5cm}
+\begin{flushright}
+	Ho Chi Minh City, \today \\[2cm]
+	\textbf{\authorone} \\[2cm]
+	\textbf{\authortwo}
+\end{flushright}
+
+\newpage
+\pagenumbering{roman}
+\setcounter{page}{4}
+\renewcommand*\contentsname{\centering TABLE OF CONTENTS}
+\tableofcontents
+\newpage
+
+\newpage
+\phantomsection
+\addcontentsline{toc}{section}{References}
+\printbibliography[title={References}]
+
+\end{document}
